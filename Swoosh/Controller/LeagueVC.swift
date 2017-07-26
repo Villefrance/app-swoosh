@@ -10,10 +10,14 @@ import UIKit
 
 class LeagueVC: UIViewController {
 
+    var player: Player!
+    
+    @IBOutlet weak var nextBtn: BorderButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        player = Player()
     }
 
     
@@ -21,6 +25,20 @@ class LeagueVC: UIViewController {
         performSegue(withIdentifier: "skillVCSegue", sender: self)
     }
 
+    @IBAction func onMensTapped(_ sender: Any) {
+        
+    }
+    
+    @IBAction func onWomensTapped(_ sender: Any) {
+        
+    }
+    
+    @IBAction func onCoedTapped(_ sender: Any) {
+        
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 
